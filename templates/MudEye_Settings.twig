@@ -1,0 +1,53 @@
+{#
+/**
+ * MudEye plugin for Craft CMS
+ *
+ * MudEye Settings.twig
+ *
+ * @author    @cole007
+ * @copyright Copyright (c) 2017 @cole007
+ * @link      http://ournameismud.co.uk/
+ * @package   MudEye
+ * @since     1.0.1
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% includeCssResource "mudeye/css/MudEye_Style.css" %}
+{% includeJsResource "mudeye/js/MudEye_Script.js" %}
+
+<p>Default SEO Values</p>
+
+{{ forms.textareaField({
+    label: 'Meta Description',
+    id: 'seoDesc',
+    class: 'nicetext',
+    name: 'seoDesc',
+    value: settings['seoDesc'],
+    errors: settings.getErrors('seoDesc'),
+    required: false,
+}) }}
+
+{{ forms.textareaField({
+    label: 'Google Analytics code',
+    id: 'analytics',
+    class: 'nicetext',
+    name: 'analyticsCode',
+    value: settings['analyticsCode'],
+    errors: settings.getErrors('analyticsCode'),
+    rows: 10,
+    required: false,
+}) }}
+
+
+{{ forms.textareaField({
+    label: 'Google Tag Manager tracking code',
+    id: 'trackingCode',
+    class: 'nicetext',
+    name: 'trackingCode',
+    value: settings['trackingCode'],
+    errors: settings.getErrors('trackingCode'),
+    rows: 10,
+    required: false,
+}) }}

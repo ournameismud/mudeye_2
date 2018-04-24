@@ -1,0 +1,14 @@
+{
+	"name": "/mudeye",
+	"description": "SEO plugin for Our Name is Mud",
+	"type": "craft-plugin",
+	"authors": [
+		{
+			"name": "@cole007",
+			"homepage": "http://ournameismud.co.uk/"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0"
+	}
+}

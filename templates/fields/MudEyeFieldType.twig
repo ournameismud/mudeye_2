@@ -1,0 +1,42 @@
+{#
+/**
+ * MudEye plugin for Craft CMS
+ *
+ * MudEyeFieldType HTML
+ *
+ * @author    @cole007
+ * @copyright Copyright (c) 2017 @cole007
+ * @link      http://ournameismud.co.uk/
+ * @package   MudEye
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    label: 'Meta Title',
+    id: id ~ 'seoTitle',
+    class: 'nicetext',
+    name: name ~ '[seoTitle]',
+    value: values.seoTitle,
+    required: false,
+}) }}
+
+{{ forms.textareaField({
+    label: 'Meta Description',
+    id: id ~ 'seoDesc',
+    class: 'nicetext',
+    name: name ~ '[seoDesc]',
+    value: values.seoDesc,
+    required: false,
+}) }}
+
+{{ forms.checkboxField({
+    label: 'Disable page in robots.txt',
+    id: id ~ 'seoRobots',
+    class: 'nicetext',
+    name: name ~ '[seoRobots]',
+    checked: values.seoRobots ? 1 : 0,
+    required: false,
+}) }}

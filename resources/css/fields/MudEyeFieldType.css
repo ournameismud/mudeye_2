@@ -1,0 +1,20 @@
+/**
+ * MudEye plugin for Craft CMS
+ *
+ * MudEyeFieldType CSS
+ *
+ * @author    @cole007
+ * @copyright Copyright (c) 2017 @cole007
+ * @link      http://ournameismud.co.uk/
+ * @package   MudEye
+ * @since     1.0.0
+ */
+
+.field .input .heading {
+	/*position: rel;ative*/
+}
+.field .input .heading small {
+	color: grey;
+	float: right;
+	font-size: 0.8em;
+}
